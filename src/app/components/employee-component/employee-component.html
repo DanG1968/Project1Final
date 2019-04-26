@@ -1,0 +1,27 @@
+<H1>Employee</H1>
+
+<div class="container">
+  <form (ngSubmit)="saveEmployee()">
+    <fieldset class="form-group">
+      <label>Employee Id</label>
+      <input type="text" [(ngModel)]="employee.employeeId" class="form-control" name="id" required="required">
+    </fieldset>
+    <fieldset class="form-group">
+      <label>First Name</label>
+    <input type="text" [(ngModel)]="employee.firstName" class="form-control" name="fistName" required="required">
+    </fieldset>
+    <fieldset class="form-group">
+      <label>Last Name</label>
+    <input type="text" [(ngModel)]="employee.lastName" class="form-control" name="lastName" required="required">
+    </fieldset>
+    <fieldset class="form-group">
+      <label>Email</label>
+      <input type="text" [(ngModel)]="employee.email" class="form-control" name="email" required="required">
+    </fieldset>
+    <fieldset class="form-group">
+      <label>Manager</label>
+      <input type="text" [(ngModel)]="employee.managerId" class="form-control" name="managerId" required="required">
+    </fieldset>
+    <button type="submit" class="btn btn-success">Save</button>
+  </form>
+</div>

@@ -1,0 +1,35 @@
+<H1>Reimbursement</H1>
+
+<div class="container">
+  <form (ngSubmit)="saveReimbursement()">
+    <fieldset class="form-group">
+      <label>Reimbursement Id</label>
+      <input type="number" [(ngModel)]="reimbursement.id" class="form-control" name="id" required="required">
+    </fieldset>
+    <fieldset class="form-group">
+      <label>Name</label>
+      <input type="text" [(ngModel)]="reimbursement.name" class="form-control" name="name" required="required">
+    </fieldset>
+    <fieldset class="form-group">
+      <label>Desccription</label>
+      <input type="text" [(ngModel)]="reimbursement.description" class="form-control" name="description" required="required">
+    </fieldset>
+    <fieldset class="form-group">
+      <label>Amount</label>
+      <input type="number" [(ngModel)]="reimbursement.amount" class="form-control" name="amount" required="required">
+    </fieldset>
+    <fieldset class="form-group">
+      <label>Date</label>
+      <input type="date" [(ngModel)]="reimbursement.date" class="form-control" name="date" required="required">
+    </fieldset>
+    <fieldset class="form-group">
+      <label>Approved</label>
+      <input type="boolean" [(ngModel)]="reimbursement.approved" class="form-control" name="approved" required="required">
+    </fieldset>
+    <fieldset class="form-group">
+      <label>Employee</label>
+      <input type="number" [(ngModel)]="reimbursement.empId" class="form-control" name="empid" required="required">
+    </fieldset>
+    <button type="submit" class="btn btn-success">Save</button>
+  </form>
+</div>
